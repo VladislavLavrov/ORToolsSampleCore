@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Расчетные показатели</h2>
+
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Наименование показателя, ед. изм.</th>
+                        <th>Величина</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Величина целевой функции</td>
+                        <td>@Math.Round(ViewBag.Get_objective, 2)</td>
+                    </tr>
+                    <tr>
+                        <td>Оптимальная величина X1</td>
+                        <td>@Math.Round(ViewBag.Get_opt_X1, 2)</td>
+                    </tr>
+                    <tr>
+                        <td>Оптимальная величина X2</td>
+                        <td>@Math.Round(ViewBag.Get_opt_X2, 2)</td>
+                    </tr>
+                    <tr>
+                        <td>Оптимальная величина X3</td>
+                        <td>@Math.Round(ViewBag.Get_opt_X3, 2)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>       
+
+    <p></p>
+</body>
+</html>

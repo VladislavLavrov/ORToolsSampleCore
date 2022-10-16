@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">    
+    <h1 class="display-4">Решение задачи оптимизации <br> с использованием пакета Google.OrTools</h1>
+    <p>Learn about <a href="https://github.com/google/or-tools">OR-Tools - Google Optimization Tools</a>.</p>
+</div>
+<div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+    <p>
+    </p>
+    <p>
+        Целевая функция:
+        <br>
+        2X1 - 3X2 + 4X3 -> min
+        <br>
+        <br>
+
+        Прямые ограничения на X:
+        <br>
+        0 <= X1  <=  10
+        <br>
+        0 <= X2  <=  100
+        <br>
+        0 <= X3  <=  20
+        <br>
+        <br>
+        Ограничения-неравенства:
+        <br>
+        X1 + 2X2 + 3X3 <= 900
+        <br>
+        2X1 + 10X2 - 5X3 <= 950
+        <br>
+        <br>
+        Для нахождения максимального значения необходимо поменять знак коэффициентов целевой функции.
+    </p>
+</div>
+

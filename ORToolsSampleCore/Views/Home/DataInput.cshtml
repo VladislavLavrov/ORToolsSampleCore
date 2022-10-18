@@ -18,77 +18,73 @@
                 <table class="table">
                     <thead>
                         <tr>
-                            <th>Наименование показателя, ед. изм.</th>
-                            <th>Величина</th>
+                            <th>Наименование показателя</th>
+                            <th>Величина при X1</th>
+                            <th>Величина при X2</th>
+                            <th>Величина при X3</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Величина коэффициента целевой функции при X1</td>
+                            <td>Коэффициент в целевой функции</td>
                             <td>@Html.TextBox("DataInput.Koeff_Z_1", (double)(ViewBag.DataInput.Koeff_Z_1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Величина коэффициента целевой функции при X2</td>
                             <td>@Html.TextBox("DataInput.Koeff_Z_2", (double)(ViewBag.DataInput.Koeff_Z_2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Величина коэффициента целевой функции при X2</td>
                             <td>@Html.TextBox("DataInput.Koeff_Z_3", (double)(ViewBag.DataInput.Koeff_Z_3), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
+                        </tr>                                                
                         <tr>
-                            <td>Минимальная величина X1</td>
-                            <td>@Html.TextBox("DataInput.X1_min", (double)(ViewBag.DataInput.X1_min), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Максимальная величина X1</td>
-                            <td>@Html.TextBox("DataInput.X1_max", (double)(ViewBag.DataInput.X1_max), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Минимальная величина X2</td>
-                            <td>@Html.TextBox("DataInput.X2_min", (double)(ViewBag.DataInput.X2_min), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Максимальная величина X2</td>
-                            <td>@Html.TextBox("DataInput.X2_max", (double)(ViewBag.DataInput.X2_max), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Минимальная величина X3</td>
-                            <td>@Html.TextBox("DataInput.X3_min", (double)(ViewBag.DataInput.X3_min), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Максимальная величина X3</td>
-                            <td>@Html.TextBox("DataInput.X3_max", (double)(ViewBag.DataInput.X3_max), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Величина коэффициента в 1-м уравнении ограничений при X1</td>
+                            <td>Коэффициент в 1-м уравнении ограничений</td>
                             <td>@Html.TextBox("DataInput.ConstraintKoeff_1_X1", (double)(ViewBag.DataInput.ConstraintKoeff_1_X1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Величина коэффициента во 2-м уравнении ограничений при X1</td>
-                            <td>@Html.TextBox("DataInput.ConstraintKoeff_2_X1", (double)(ViewBag.DataInput.ConstraintKoeff_2_X1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Величина коэффициента в 1-м уравнении ограничений при X2</td>
                             <td>@Html.TextBox("DataInput.ConstraintKoeff_1_X2", (double)(ViewBag.DataInput.ConstraintKoeff_1_X2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Величина коэффициента во 2-м уравнении ограничений при X2</td>
-                            <td>@Html.TextBox("DataInput.ConstraintKoeff_2_X2", (double)(ViewBag.DataInput.ConstraintKoeff_2_X2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
-                        <tr>
-                            <td>Величина коэффициента в 1-м уравнении ограничений при X3</td>
                             <td>@Html.TextBox("DataInput.ConstraintKoeff_1_X3", (double)(ViewBag.DataInput.ConstraintKoeff_1_X3), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
                         </tr>
                         <tr>
-                            <td>Величина коэффициента во 2-м уравнении ограничений при X3</td>
+                            <td>Коэффициент во 2-м уравнении ограничений</td>
+                            <td>@Html.TextBox("DataInput.ConstraintKoeff_2_X1", (double)(ViewBag.DataInput.ConstraintKoeff_2_X1), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td>@Html.TextBox("DataInput.ConstraintKoeff_2_X2", (double)(ViewBag.DataInput.ConstraintKoeff_2_X2), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
                             <td>@Html.TextBox("DataInput.ConstraintKoeff_2_X3", (double)(ViewBag.DataInput.ConstraintKoeff_2_X3), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
-                        </tr>
+                        </tr>                       
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead>
                         <tr>
-                            <td>Величина коэффициента свободного члена в 1-м уравнении ограничений (верхний предел)</td>
+                            <th>Наименование показателя.</th>
+                            <th>Минимум</th>
+                            <th>Максимум</th>
+                        </tr>
+                    </thead>
+                    <tbody>                        
+                        <tr>
+                            <td>Величина X1</td>
+                            <td>@Html.TextBox("DataInput.X1_min", (double)(ViewBag.DataInput.X1_min), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td>@Html.TextBox("DataInput.X1_max", (double)(ViewBag.DataInput.X1_max), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                        </tr>                       
+                        <tr>
+                            <td>Величина X2</td>
+                            <td>@Html.TextBox("DataInput.X2_min", (double)(ViewBag.DataInput.X2_min), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td>@Html.TextBox("DataInput.X2_max", (double)(ViewBag.DataInput.X2_max), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                        </tr>                        
+                        <tr>
+                            <td>Величина X3</td>
+                            <td>@Html.TextBox("DataInput.X3_min", (double)(ViewBag.DataInput.X3_min), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                            <td>@Html.TextBox("DataInput.X3_max", (double)(ViewBag.DataInput.X3_max), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
+                        </tr> 
+                    </tbody>
+                </table>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Наименование показателя</th>
+                            <th>Величина</th>                           
+                        </tr>
+                    </thead>
+                    <tbody>                        
+                        <tr>
+                            <td>Коэффициент свободного члена в 1-м уравнении ограничений (верхний предел)</td>
                             <td>@Html.TextBox("DataInput.Constraint_1_Ub", (double)(ViewBag.DataInput.Constraint_1_Ub), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
                         </tr>
                         <tr>
-                            <td>Величина коэффициента свободного члена во 2-м уравнении ограничений (верхний предел)</td>
+                            <td>Коэффициент свободного члена во 2-м уравнении ограничений (верхний предел)</td>
                             <td>@Html.TextBox("DataInput.Constraint_2_Ub", (double)(ViewBag.DataInput.Constraint_2_Ub), htmlAttributes: new { type = "text", style = " width:100px; " })</td>
                         </tr>
                     </tbody>
